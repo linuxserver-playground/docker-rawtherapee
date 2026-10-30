@@ -9,6 +9,9 @@ upstream:
   version:
     type: github_release
     repo: rawtherapee/rawtherapee
+    require_assets:
+      - asset: '^RawTherapee_.*_x86_64_release\.AppImage$'
+      - asset: '^RawTherapee_.*_arm64_release\.AppImage$'
   notes:
     type: github_release
     repo: rawtherapee/rawtherapee
